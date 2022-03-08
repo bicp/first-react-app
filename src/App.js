@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { DisplayPerson } from "./components/DisplayPerson/DisplayPerson";
+
+const persons = [
+  { name: "john", age: 38 },
+  { name: "doe", age: 20 },
+  { name: "joe", age: 41 },
+];
+
+const posts = [
+  { title: "post 1", description: "post 1 description" },
+  { title: "post 2", description: "post 2 description" },
+  { title: "post 3", description: "post 3 description" },
+];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* persons.map((person) => {
+        return <DisplayPerson name={person.name} age={person.age} />;
+      }) */}
     </div>
   );
 }
